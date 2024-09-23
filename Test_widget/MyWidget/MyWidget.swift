@@ -54,7 +54,7 @@ struct MyWidgetEntryView : View {
 
             HStack {
                 Button(intent: InteractiveWidgetGetVehicleInfoIntent()) {
-                    Text("Get Vehicle Info")
+                    Text("Send network request")
                 }
 
                 Button(intent: SyncAppIntent()) {
