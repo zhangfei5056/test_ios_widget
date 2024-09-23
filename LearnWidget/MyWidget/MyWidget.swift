@@ -44,11 +44,9 @@ struct MyWidgetEntryView : View {
 
     var body: some View {
         VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
+            Text("Time:") + Text(entry.date, style: .time)
 
-            Text("Emoji:")
-            Text(entry.emoji)
+            Text("Emoji:") + Text(entry.emoji)
         }
     }
 }
@@ -69,6 +67,7 @@ struct MyWidget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+
     }
 }
 
